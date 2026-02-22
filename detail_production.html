@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>TITAN 9000 GT | Agrotech Klaster</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#E30613",
+                        "primary-glow": "rgba(227, 6, 19, 0.4)",
+                        "background-dark": "#0A0A0A",
+                        "charcoal": "#111111",
+                        "glass": "rgba(255, 255, 255, 0.03)",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "grotesk": ["Space Grotesk", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities { .glassmorphism { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); } .text-glow-red { text-shadow: 0 0 15px rgba(227, 6, 19, 0.6); } .border-glow { box-shadow: 0 0 15px
+        rgba(227, 6, 19, 0.2); } .pinstripe-bg { background: linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 40px 100%; } .floating-rhombus { width: 12px; height: 12px; background: #E30613; transform: rotate(45deg);
+        box-shadow: 0 0 15px #E30613; } .custom-scrollbar::-webkit-scrollbar { width: 4px; } .custom-scrollbar::-webkit-scrollbar-track { background: #0A0A0A; } .custom-scrollbar::-webkit-scrollbar-thumb { background: #E30613; } .video-glow { box-shadow:
+        0 0 30px rgba(227, 6, 19, 0.4); } }
+    </style>
+</head>
+
+<body class="font-display bg-background-dark text-white antialiased custom-scrollbar">
+    <header class="fixed top-0 left-0 right-0 z-[100] transition-all duration-300">
+        <div class="bg-black/60 backdrop-blur-md border-b border-white/5 py-2">
+            <div class="container mx-auto px-6 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold text-white/40">
+                <div class="flex gap-6">
+                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">phone</span> +998 (71) 123-45-67</span>
+                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">mail</span> info@agrotech.uz</span>
+                </div>
+                <div class="flex gap-4">
+                    <a class="hover:text-primary transition-colors" href="#">UZ</a>
+                    <a class="text-white font-bold" href="#">RU</a>
+                    <a class="hover:text-primary transition-colors" href="#">EN</a>
+                </div>
+            </div>
+        </div>
+        <nav class="container mx-auto px-6 h-16 lg:h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-primary w-10 h-10 rounded flex items-center justify-center border-glow">
+                    <span class="material-symbols-outlined text-white font-bold">agriculture</span>
+                </div>
+                <div class="leading-none">
+                    <span class="block text-xl font-800 tracking-tighter uppercase font-grotesk">Agrotech</span>
+                    <span class="block text-[10px] tracking-[0.3em] text-primary uppercase font-bold">Klaster</span>
+                </div>
+            </div>
+            <ul class="hidden lg:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-white/60">
+                <li><a class="hover:text-primary transition-colors" href="./index.html">Главная</a></li>
+                <li><a class="hover:text-primary transition-colors" href="./about.html">О компании</a></li>
+                <li><a class="hover:text-primary transition-colors flex items-center gap-1" href="./production.html">Продукция <span class="material-symbols-outlined text-[16px]">expand_more</span></a></li>
+                <li><a class="hover:text-primary transition-colors" href="./diller.html">Дилеры</a></li>
+                <li><a class="hover:text-primary transition-colors" href="./news.html">Новости и события</a></li>
+                <li><a class="hover:text-primary transition-colors" href="./service.html"> Сервис и поддержка</a></li>
+                <li><a class="hover:text-primary transition-colors" href="./contacts.html">Контакты</a></li>
+            </ul>
+            <div class="flex items-center gap-6">
+                <button class="hidden xl:flex items-center gap-2 text-white/40 hover:text-white transition-colors text-[11px] font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</button>
+            </div>
+        </nav>
+    </header>
+    <section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden pinstripe-bg">
+        <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 items-center gap-12">
+            <div class="max-w-xl">
+                <nav class="flex items-center gap-2 mb-8 text-[12px] font-medium tracking-wide">
+                    <a class="text-white/40 hover:text-white transition-colors" href="#">Главная</a>
+                    <span class="material-symbols-outlined text-[14px] text-white/40">chevron_right</span>
+                    <a class="text-white/40 hover:text-white transition-colors" href="#">Каталог</a>
+                    <span class="material-symbols-outlined text-[14px] text-white/40">chevron_right</span>
+                    <span class="text-primary uppercase tracking-widest font-bold text-[11px]">Titan 9000 GT</span>
+                </nav>
+                <div class="inline-block bg-primary px-4 py-1.5 mb-6">
+                    <span class="text-[11px] font-[900] tracking-[0.3em] uppercase">Новинка</span>
+                </div>
+                <h1 class="text-6xl lg:text-8xl font-[800] leading-[0.9] font-grotesk tracking-tighter uppercase mb-8">
+                    TITAN<br/><span class="text-primary">9000 GT</span>
+                </h1>
+                <p class="text-lg text-white/60 font-light leading-relaxed mb-10 border-l-2 border-primary pl-6">
+                    Флагманский зерноуборочный комбайн нового поколения. Бескомпромиссная мощность, интеллектуальное управление и максимальная производительность в самых суровых условиях.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-primary hover:bg-white hover:text-primary text-white px-10 py-5 font-bold text-[12px] uppercase tracking-widest transition-all border-glow">
+                    Запросить предложение
+                </button>
+                    <button class="border border-white/20 hover:border-primary px-10 py-5 font-bold text-[12px] uppercase tracking-widest transition-all flex items-center gap-2 group">
+                    Скачать ТТХ <span class="material-symbols-outlined text-[18px] group-hover:text-primary transition-colors">download</span>
+</button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="relative z-10 transform lg:scale-110 lg:translate-x-12">
+                    <img alt="Titan 9000 GT" class="w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZlHWkhtkGBq7S4QUcpx8qLutnPqXID8kBuq4OLI0B87b0jxMl3EV-841XkidJpPYnIXqAfpNyXYFLIGm1Pu7OtjMXJ_ANzkX5OF4htPA2-Bkrq-ZtsT3ZrNKURw07xqLgf4vGhJLE--Ve8FRvdFZe_IMId02kYiBgZteoU1D51ixMP-A85V-x9tBG7uFnBagCORPaflIY77gGDZt5vDhnss4C_iR39zykw8r_Idm1NwTWqg53dbsOg9PLoGCALkx8CSD1V55eqYGd"
+                    />
+                </div>
+                <div class="absolute top-[10%] -left-10 z-20 glassmorphism p-5 min-w-[180px] border-l-4 border-l-primary animate-pulse shadow-2xl">
+                    <div class="text-[10px] text-white/40 uppercase font-bold tracking-widest mb-1">Мощность</div>
+                    <div class="text-2xl font-[800] font-grotesk">650 л.с.</div>
+                </div>
+                <div class="absolute bottom-[20%] right-0 z-20 glassmorphism p-5 min-w-[180px] border-r-4 border-r-primary shadow-2xl">
+                    <div class="text-[10px] text-white/40 uppercase font-bold tracking-widest mb-1">Бункер</div>
+                    <div class="text-2xl font-[800] font-grotesk">12,500 Л</div>
+                </div>
+                <div class="absolute -bottom-10 left-[20%] z-20 glassmorphism p-5 min-w-[180px] border-b-4 border-b-primary shadow-2xl">
+                    <div class="text-[10px] text-white/40 uppercase font-bold tracking-widest mb-1">Жатка</div>
+                    <div class="text-2xl font-[800] font-grotesk">12.2 М</div>
+                </div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/10 rounded-full blur-[120px] -z-10"></div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-charcoal py-10 border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="flex gap-4 overflow-x-auto pb-4 custom-scrollbar">
+                <div class="flex-shrink-0 w-64 h-40 group relative overflow-hidden border border-white/10">
+                    <img alt="Angle 1" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZlHWkhtkGBq7S4QUcpx8qLutnPqXID8kBuq4OLI0B87b0jxMl3EV-841XkidJpPYnIXqAfpNyXYFLIGm1Pu7OtjMXJ_ANzkX5OF4htPA2-Bkrq-ZtsT3ZrNKURw07xqLgf4vGhJLE--Ve8FRvdFZe_IMId02kYiBgZteoU1D51ixMP-A85V-x9tBG7uFnBagCORPaflIY77gGDZt5vDhnss4C_iR39zykw8r_Idm1NwTWqg53dbsOg9PLoGCALkx8CSD1V55eqYGd"
+                    />
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
+                </div>
+                <div class="flex-shrink-0 w-64 h-40 group relative overflow-hidden border border-white/10">
+                    <img alt="Angle 2" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCLPX4umgZdTgr9FWtKRk9MYDXlK1QP5AjeVWgEMKiWm9EOvhPEBXHWZuZ-fh2NVIoYmwzZwoDvOJ46FF0vJQrQmyyeSvAh2m-zul6t43h3fSDs-NtYTPXroaSBFvJ1hr8wwXNZh_F-pxGGtwR-TSa_-eLuvPqXfYU-X3t6EpFDzwU7Cc3ldJFYTSyo-w7BQUmvbgeYyZPakSe_JK8OIG6BfK92LRwYBW1LsZUGnIoccrAU0JwMIkCCz86boeAu45iCfAPdzeZCdXj"
+                    />
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
+                </div>
+                <div class="flex-shrink-0 w-64 h-40 group relative overflow-hidden border border-primary/50 video-glow">
+                    <img alt="Video" class="w-full h-full object-cover opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCLPX4umgZdTgr9FWtKRk9MYDXlK1QP5AjeVWgEMKiWm9EOvhPEBXHWZuZ-fh2NVIoYmwzZwoDvOJ46FF0vJQrQmyyeSvAh2m-zul6t43h3fSDs-NtYTPXroaSBFvJ1hr8wwXNZh_F-pxGGtwR-TSa_-eLuvPqXfYU-X3t6EpFDzwU7Cc3ldJFYTSyo-w7BQUmvbgeYyZPakSe_JK8OIG6BfK92LRwYBW1LsZUGnIoccrAU0JwMIkCCz86boeAu45iCfAPdzeZCdXj"
+                    />
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center border-glow">
+                            <span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 w-64 h-40 group relative overflow-hidden border border-white/10">
+                    <img alt="Angle 3" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZlHWkhtkGBq7S4QUcpx8qLutnPqXID8kBuq4OLI0B87b0jxMl3EV-841XkidJpPYnIXqAfpNyXYFLIGm1Pu7OtjMXJ_ANzkX5OF4htPA2-Bkrq-ZtsT3ZrNKURw07xqLgf4vGhJLE--Ve8FRvdFZe_IMId02kYiBgZteoU1D51ixMP-A85V-x9tBG7uFnBagCORPaflIY77gGDZt5vDhnss4C_iR39zykw8r_Idm1NwTWqg53dbsOg9PLoGCALkx8CSD1V55eqYGd"
+                    />
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
+                </div>
+                <div class="flex-shrink-0 w-64 h-40 group relative overflow-hidden border border-white/10">
+                    <img alt="Angle 4" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCLPX4umgZdTgr9FWtKRk9MYDXlK1QP5AjeVWgEMKiWm9EOvhPEBXHWZuZ-fh2NVIoYmwzZwoDvOJ46FF0vJQrQmyyeSvAh2m-zul6t43h3fSDs-NtYTPXroaSBFvJ1hr8wwXNZh_F-pxGGtwR-TSa_-eLuvPqXfYU-X3t6EpFDzwU7Cc3ldJFYTSyo-w7BQUmvbgeYyZPakSe_JK8OIG6BfK92LRwYBW1LsZUGnIoccrAU0JwMIkCCz86boeAu45iCfAPdzeZCdXj"
+                    />
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-32 bg-background-dark relative">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20">
+                <div class="relative">
+                    <div class="floating-rhombus mb-6"></div>
+                    <h2 class="text-3xl font-[800] uppercase font-grotesk mb-6 tracking-tight">Smart Harvesting<br/><span class="text-primary">Интеллект Полей</span></h2>
+                    <p class="text-white/50 leading-relaxed mb-8">
+                        Система TITAN Core анализирует состояние почвы и урожайности в реальном времени, автоматически подстраивая скорость подачи и параметры обмолота для минимизации потерь.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="glassmorphism p-6">
+                            <span class="material-symbols-outlined text-primary mb-4">sensors</span>
+                            <div class="font-bold text-sm uppercase tracking-widest mb-1">AI-Сенсоры</div>
+                            <div class="text-[12px] text-white/40">Определение влажности зерна 24/7</div>
+                        </div>
+                        <div class="glassmorphism p-6">
+                            <span class="material-symbols-outlined text-primary mb-4">satellite_alt</span>
+                            <div class="font-bold text-sm uppercase tracking-widest mb-1">RTK Навигация</div>
+                            <div class="text-[12px] text-white/40">Точность до 2.5 см без участия оператора</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="floating-rhombus mb-6"></div>
+                    <h2 class="text-3xl font-[800] uppercase font-grotesk mb-6 tracking-tight">Operator Comfort<br/><span class="text-primary">Эргономика Будущего</span></h2>
+                    <p class="text-white/50 leading-relaxed mb-8">
+                        Кабина уровня Premium Suite с панорамным обзором 360°, активным шумоподавлением и климат-контролем промышленного класса. Работайте эффективно без усталости.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="glassmorphism p-6">
+                            <span class="material-symbols-outlined text-primary mb-4">airline_seat_recline_extra</span>
+                            <div class="font-bold text-sm uppercase tracking-widest mb-1">Air-Flow Seat</div>
+                            <div class="text-[12px] text-white/40">Сиденье с 12 точками регулировки</div>
+                        </div>
+                        <div class="glassmorphism p-6">
+                            <span class="material-symbols-outlined text-primary mb-4">display_settings</span>
+                            <div class="font-bold text-sm uppercase tracking-widest mb-1">Matrix View</div>
+                            <div class="text-[12px] text-white/40">Проекционный дисплей на лобовом стекле</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-32 bg-charcoal">
+        <div class="container mx-auto px-6">
+            <div class="flex items-end justify-between mb-16 border-l-4 border-primary pl-8">
+                <div>
+                    <span class="text-[11px] font-[900] tracking-[0.3em] text-primary uppercase mb-2 block">Спецификации</span>
+                    <h2 class="text-4xl lg:text-5xl font-[800] uppercase font-grotesk tracking-tighter">Технические <br/>Характеристики</h2>
+                </div>
+                <button class="hidden lg:flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-white/40 hover:text-white transition-colors">
+                Сравнить модели <span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+</button>
+            </div>
+            <div class="space-y-12">
+                <div>
+                    <h4 class="text-[12px] font-[900] uppercase tracking-[0.4em] text-primary mb-6">Двигатель</h4>
+                    <div class="grid grid-cols-1 border-t border-white/10">
+                        <div class="group grid grid-cols-2 py-6 border-b border-white/5 px-4 hover:bg-white/5 transition-all">
+                            <span class="text-white/40 text-sm font-medium uppercase tracking-widest">Модель двигателя</span>
+                            <span class="text-white font-bold font-grotesk group-hover:text-primary transition-colors">Titan V12 Turbo Diesel</span>
+                        </div>
+                        <div class="group grid grid-cols-2 py-6 border-b border-white/5 px-4 hover:bg-white/5 transition-all">
+                            <span class="text-white/40 text-sm font-medium uppercase tracking-widest">Номинальная мощность</span>
+                            <span class="text-white font-bold font-grotesk group-hover:text-primary transition-colors">650 л.с. (478 кВт)</span>
+                        </div>
+                        <div class="group grid grid-cols-2 py-6 border-b border-white/5 px-4 hover:bg-white/5 transition-all">
+                            <span class="text-white/40 text-sm font-medium uppercase tracking-widest">Объем топливного бака</span>
+                            <span class="text-white font-bold font-grotesk group-hover:text-primary transition-colors">1,250 л.</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-[12px] font-[900] uppercase tracking-[0.4em] text-primary mb-6">Трансмиссия</h4>
+                    <div class="grid grid-cols-1 border-t border-white/10">
+                        <div class="group grid grid-cols-2 py-6 border-b border-white/5 px-4 hover:bg-white/5 transition-all">
+                            <span class="text-white/40 text-sm font-medium uppercase tracking-widest">Тип привода</span>
+                            <span class="text-white font-bold font-grotesk group-hover:text-primary transition-colors">Гидростатический 4WD</span>
+                        </div>
+                        <div class="group grid grid-cols-2 py-6 border-b border-white/5 px-4 hover:bg-white/5 transition-all">
+                            <span class="text-white/40 text-sm font-medium uppercase tracking-widest">Количество скоростей</span>
+                            <span class="text-white font-bold font-grotesk group-hover:text-primary transition-colors">3 диапазона (Variable)</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-[12px] font-[900] uppercase tracking-[0.4em] text-primary mb-6">Рабочие органы</h4>
+                    <div class="grid grid-cols-1 border-t border-white/10">
+                        <div class="group grid grid-cols-2 py-6 border-b border-white/5 px-4 hover:bg-white/5 transition-all">
+                            <span class="text-white/40 text-sm font-medium uppercase tracking-widest">Система обмолота</span>
+                            <span class="text-white font-bold font-grotesk group-hover:text-primary transition-colors">Двухроторная Axial-Flow</span>
+                        </div>
+                        <div class="group grid grid-cols-2 py-6 border-b border-white/5 px-4 hover:bg-white/5 transition-all">
+                            <span class="text-white/40 text-sm font-medium uppercase tracking-widest">Объем зернового бункера</span>
+                            <span class="text-white font-bold font-grotesk group-hover:text-primary transition-colors">12,500 л.</span>
+                        </div>
+                        <div class="group grid grid-cols-2 py-6 border-b border-white/5 px-4 hover:bg-white/5 transition-all">
+                            <span class="text-white/40 text-sm font-medium uppercase tracking-widest">Скорость выгрузки</span>
+                            <span class="text-white font-bold font-grotesk group-hover:text-primary transition-colors">150 л/сек</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-primary relative overflow-hidden">
+        <div class="absolute inset-0 pinstripe-bg opacity-20"></div>
+        <div class="container mx-auto px-6 relative z-10 flex flex-col items-center text-center">
+            <h2 class="text-4xl lg:text-6xl font-[900] font-grotesk uppercase mb-8 tracking-tighter text-white">
+                Готовы обновить <br/>свой технопарк?
+            </h2>
+            <p class="text-white/80 text-lg mb-12 max-w-2xl font-light">
+                Наши эксперты помогут подобрать оптимальную комплектацию TITAN 9000 GT под ваши задачи и условия эксплуатации.
+            </p>
+            <button class="bg-white text-primary px-12 py-6 font-[900] text-[14px] uppercase tracking-[0.2em] hover:bg-black hover:text-white transition-all shadow-2xl">
+            Запросить коммерческое предложение
+        </button>
+        </div>
+    </section>
+    <footer class="bg-background-dark pt-32 pb-12 relative overflow-hidden border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-24">
+                <div>
+                    <div class="flex items-center gap-3 mb-10">
+                        <div class="bg-primary w-8 h-8 flex items-center justify-center border-glow">
+                            <span class="material-symbols-outlined text-white text-lg">agriculture</span>
+                        </div>
+                        <div class="leading-none">
+                            <span class="block text-lg font-[800] tracking-tighter uppercase font-grotesk">Agrotech</span>
+                            <span class="block text-[8px] tracking-[0.3em] text-primary uppercase font-bold">Klaster</span>
+                        </div>
+                    </div>
+                    <p class="text-white/30 text-sm leading-relaxed mb-10 font-light italic">
+                        Промышленный холдинг, специализирующийся на сельскохозяйственном инжиниринге будущего и автономных экосистемах.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-10 text-white/60">НАВИГАЦИЯ</h5>
+                    <ul class="space-y-4 text-white/30 text-[11px] font-bold uppercase tracking-widest">
+                        <li><a class="hover:text-primary transition-colors" href="#">История</a></li>
+                        <li><a class="hover:text-primary transition-colors text-primary" href="#">Техника</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Инновации</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Карьера</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-10 text-white/60">КОНТАКТЫ</h5>
+                    <ul class="space-y-6 text-white/30 text-sm font-light">
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary text-lg">sensors</span>
+                            <span>123 Индустриальный сектор Альфа,<br/>Технопарк, Ташкент</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary text-lg">call</span>
+                            <span>+998 (71) 123-45-67</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-10 text-white/60">ПОДПИСКА</h5>
+                    <form class="space-y-4">
+                        <div class="relative">
+                            <input class="w-full bg-white/5 border border-white/10 px-6 py-4 text-xs focus:border-primary focus:ring-0 transition-all placeholder:text-white/20" placeholder="Ваша почта" type="email" />
+                            <button class="absolute right-2 top-2 bottom-2 bg-primary text-white px-4 font-bold text-[9px] uppercase tracking-widest hover:brightness-110">СВЯЗЬ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-white/10 text-[9px] uppercase tracking-[0.4em] font-bold">© 2024 AGROTECH KLASTER INDUSTRIAL. PRODUCT_GT_9000_SPEC</p>
+                <div class="flex gap-8 text-[9px] uppercase tracking-[0.4em] font-bold text-white/10">
+                    <a class="hover:text-primary transition-colors" href="#">Безопасность</a>
+                    <a class="hover:text-primary transition-colors" href="#">Политика_Данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="fixed bottom-10 right-10 z-[110]">
+        <button class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white border-glow hover:scale-110 transition-transform shadow-2xl">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+</button>
+    </div>
+
+</body>
+
+</html>

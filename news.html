@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Agrotech Klaster | Новости и события</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#E30613",
+                        "primary-glow": "rgba(227, 6, 19, 0.4)",
+                        "background-dark": "#0A0A0A",
+                        "charcoal": "#111111",
+                        "glass": "rgba(255, 255, 255, 0.03)",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "grotesk": ["Space Grotesk", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities { .glassmorphism { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); } .text-glow-red { text-shadow: 0 0 15px rgba(227, 6, 19, 0.6); } .grid-bg { background-image: linear-gradient(rgba(255,
+        255, 255, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px); background-size: 50px 50px; } .pinstripe-bg { background: linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size:
+        40px 100%; } .floating-rhombus { width: 15px; height: 15px; background: #E30613; transform: rotate(45deg); box-shadow: 0 0 15px #E30613; position: absolute; } .custom-scrollbar::-webkit-scrollbar { width: 4px; } .custom-scrollbar::-webkit-scrollbar-track
+        { background: #0A0A0A; } .custom-scrollbar::-webkit-scrollbar-thumb { background: #E30613; } .masonry-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); grid-auto-rows: 200px; gap: 1.5rem; } }
+    </style>
+</head>
+
+<body class="font-display bg-background-dark text-white antialiased custom-scrollbar">
+    <header class="fixed top-0 left-0 right-0 z-[100] transition-all duration-300">
+        <div class="bg-black/60 backdrop-blur-md border-b border-white/5 py-2">
+            <div class="container mx-auto px-6 flex justify-between items-center text-[10px] uppercase tracking-widest font-bold text-white/40">
+                <div class="flex gap-6">
+                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">phone</span> +998 (71) 123-45-67</span>
+                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">mail</span> info@agrotech.uz</span>
+                </div>
+                <div class="flex gap-4">
+                    <a class="hover:text-primary transition-colors" href="#">UZ</a>
+                    <a class="text-white font-bold" href="#">RU</a>
+                    <a class="hover:text-primary transition-colors" href="#">EN</a>
+                </div>
+            </div>
+        </div>
+        <nav class="container mx-auto px-6 h-16 lg:h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-primary w-10 h-10 rounded flex items-center justify-center border-glow">
+                    <span class="material-symbols-outlined text-white font-bold">agriculture</span>
+                </div>
+                <div class="leading-none">
+                    <span class="block text-xl font-800 tracking-tighter uppercase font-grotesk">Agrotech</span>
+                    <span class="block text-[10px] tracking-[0.3em] text-primary uppercase font-bold">Klaster</span>
+                </div>
+            </div>
+            <ul class="hidden lg:flex items-center gap-10 text-[11px] font-bold uppercase tracking-[0.2em] text-white/60">
+                <li><a class="hover:text-primary transition-colors" href="./index.html">Главная</a></li>
+                <li><a class="hover:text-primary transition-colors" href="./about.html">О компании</a></li>
+                <li><a class="hover:text-primary transition-colors flex items-center gap-1" href="./production.html">Продукция <span class="material-symbols-outlined text-[16px]">expand_more</span></a></li>
+                <li><a class="hover:text-primary transition-colors" href="./diller.html">Дилеры</a></li>
+                <li><a class="hover:text-primary transition-colors" href="./news.html">Новости и события</a></li>
+                <li><a class="hover:text-primary transition-colors" href="./service.html"> Сервис и поддержка</a></li>
+                <li><a class="hover:text-primary transition-colors" href="./contacts.html">Контакты</a></li>
+            </ul>
+            <div class="flex items-center gap-6">
+                <button class="hidden xl:flex items-center gap-2 text-white/40 hover:text-white transition-colors text-[11px] font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</button>
+            </div>
+        </nav>
+    </header>
+    <section class="relative min-h-[35vh] flex items-center bg-charcoal pinstripe-bg pt-32 pb-16 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img alt="Industrial Cinematic Background" class="w-full h-full object-cover opacity-30 grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCLPX4umgZdTgr9FWtKRk9MYDXlK1QP5AjeVWgEMKiWm9EOvhPEBXHWZuZ-fh2NVIoYmwzZwoDvOJ46FF0vJQrQmyyeSvAh2m-zul6t43h3fSDs-NtYTPXroaSBFvJ1hr8wwXNZh_F-pxGGtwR-TSa_-eLuvPqXfYU-X3t6EpFDzwU7Cc3ldJFYTSyo-w7BQUmvbgeYyZPakSe_JK8OIG6BfK92LRwYBW1LsZUGnIoccrAU0JwMIkCCz86boeAu45iCfAPdzeZCdXj"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-black/80"></div>
+        </div>
+        <div class="floating-rhombus opacity-40 top-1/4 right-[15%]"></div>
+        <div class="floating-rhombus opacity-20 bottom-1/3 left-[10%] scale-75"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl">
+                <nav class="flex items-center gap-2 mb-6 text-[12px] font-medium tracking-wide">
+                    <a class="text-white/40 hover:text-white transition-colors" href="#">Главная</a>
+                    <span class="text-white/40 font-light flex items-center">
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+                    </span>
+                    <span class="text-primary uppercase tracking-widest font-bold text-[11px]">Новости</span>
+                </nav>
+                <h1 class="text-3xl lg:text-5xl font-[800] leading-[1.1] font-grotesk tracking-tighter uppercase mb-4">
+                    НОВОСТИ И СОБЫТИЯ<br/>
+                    <span class="text-primary">AGROTECH KLASTER</span>
+                </h1>
+                <p class="text-base text-white/50 max-w-xl font-light leading-relaxed">
+                    Главные обновления, пресс-релизы и отчеты с полей от ведущего промышленного холдинга региона.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-background-dark border-y border-white/5 py-6">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
+                <button class="px-6 py-2 text-[10px] font-bold uppercase tracking-widest border border-primary bg-primary text-white transition-all">Все</button>
+                <button class="px-6 py-2 text-[10px] font-bold uppercase tracking-widest border border-white/10 text-white/60 hover:border-primary/50 hover:text-white transition-all">Новости</button>
+                <button class="px-6 py-2 text-[10px] font-bold uppercase tracking-widest border border-white/10 text-white/60 hover:border-primary/50 hover:text-white transition-all">События</button>
+                <button class="px-6 py-2 text-[10px] font-bold uppercase tracking-widest border border-white/10 text-white/60 hover:border-primary/50 hover:text-white transition-all">Медиа</button>
+            </div>
+            <div class="relative w-full md:w-80">
+                <input class="w-full bg-white/5 border-white/10 text-white px-5 py-3 text-xs focus:ring-primary focus:border-primary placeholder:text-white/20" placeholder="Поиск по публикациям..." type="text" />
+                <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-white/20">search</span>
+            </div>
+        </div>
+    </section>
+    <main class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="relative mb-20 group cursor-pointer overflow-hidden border border-white/10">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="relative aspect-video lg:aspect-auto overflow-hidden">
+                        <img alt="Featured News" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQTdOTFncjHLGpNZmwKv7TbI0ZE8uZzVwZQachXMvmU5W_0CEE3W9zDdOCvioPTkhi-XW4BxyjUleigR-Dhw45UrSX8SLMD4ho4kZN8_tiCPpvVs-BOHa7Bph2IzfmjyK6r8FTWbTfxAu9vo9wxkh8mX-ntq0COstV9771BF3S_XQ9dcipU6rPEXEIjvaQqByS0Y_rTONqtiLR2ws9aBK2sG9fhshzhcaZ0crCiPWYNRidJd25Q5POKx--OUkz115SEHyU9ECeD4uW"
+                        />
+                        <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+                    </div>
+                    <div class="p-8 lg:p-16 flex flex-col justify-center bg-charcoal relative">
+                        <div class="absolute top-0 right-0 p-8">
+                            <span class="text-primary text-[10px] font-black uppercase tracking-[0.4em]">Главное</span>
+                        </div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="bg-primary/20 text-primary px-3 py-1 text-[9px] font-bold uppercase tracking-widest border border-primary/30">Пресс-релиз</span>
+                            <span class="text-white/40 text-[10px] font-bold tracking-widest">12.10.2024</span>
+                        </div>
+                        <h2 class="text-3xl lg:text-4xl font-extrabold font-grotesk tracking-tighter uppercase mb-6 leading-tight group-hover:text-primary transition-colors">
+                            Запуск новой линии производства беспилотных комбайнов серии X-Terra
+                        </h2>
+                        <p class="text-white/50 text-sm font-light leading-relaxed mb-8 max-w-lg">
+                            Agrotech Klaster объявляет об открытии высокотехнологичного цеха по сборке автономных систем управления, что позволит увеличить производственные мощности на 40% к 2025 году.
+                        </p>
+                        <a class="flex items-center gap-3 text-primary font-bold text-[11px] uppercase tracking-widest hover:gap-5 transition-all" href="#">
+                            Читать полностью <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+                <div class="glassmorphism group cursor-pointer flex flex-col">
+                    <div class="relative h-64 overflow-hidden border-b border-white/5">
+                        <img alt="News 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCLPX4umgZdTgr9FWtKRk9MYDXlK1QP5AjeVWgEMKiWm9EOvhPEBXHWZuZ-fh2NVIoYmwzZwoDvOJ46FF0vJQrQmyyeSvAh2m-zul6t43h3fSDs-NtYTPXroaSBFvJ1hr8wwXNZh_F-pxGGtwR-TSa_-eLuvPqXfYU-X3t6EpFDzwU7Cc3ldJFYTSyo-w7BQUmvbgeYyZPakSe_JK8OIG6BfK92LRwYBW1LsZUGnIoccrAU0JwMIkCCz86boeAu45iCfAPdzeZCdXj"
+                        />
+                        <span class="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1 text-[9px] font-bold text-white uppercase tracking-widest border border-white/10">Выставка</span>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <span class="text-white/30 text-[10px] font-bold tracking-widest block mb-4">08.10.2024</span>
+                        <h3 class="text-xl font-bold font-grotesk tracking-tight uppercase mb-4 leading-snug group-hover:text-primary transition-colors">Участие в международном агропромышленном форуме "Global Agro 2024"</h3>
+                        <p class="text-white/40 text-xs font-light leading-relaxed mb-8 line-clamp-3">Наши инженеры представили инновационные решения в области ирригации и автоматизированного мониторинга почвы.</p>
+                        <a class="text-primary font-bold text-[10px] uppercase tracking-widest border-b border-primary/0 hover:border-primary/100 transition-all" href="#">Читать далее</a>
+                    </div>
+                </div>
+                <div class="glassmorphism group cursor-pointer flex flex-col">
+                    <div class="relative h-64 overflow-hidden border-b border-white/5">
+                        <img alt="News 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQTdOTFncjHLGpNZmwKv7TbI0ZE8uZzVwZQachXMvmU5W_0CEE3W9zDdOCvioPTkhi-XW4BxyjUleigR-Dhw45UrSX8SLMD4ho4kZN8_tiCPpvVs-BOHa7Bph2IzfmjyK6r8FTWbTfxAu9vo9wxkh8mX-ntq0COstV9771BF3S_XQ9dcipU6rPEXEIjvaQqByS0Y_rTONqtiLR2ws9aBK2sG9fhshzhcaZ0crCiPWYNRidJd25Q5POKx--OUkz115SEHyU9ECeD4uW"
+                        />
+                        <span class="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1 text-[9px] font-bold text-white uppercase tracking-widest border border-white/10">Новости</span>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <span class="text-white/30 text-[10px] font-bold tracking-widest block mb-4">05.10.2024</span>
+                        <h3 class="text-xl font-bold font-grotesk tracking-tight uppercase mb-4 leading-snug group-hover:text-primary transition-colors">Партнерство с региональными фермерскими хозяйствами расширяется</h3>
+                        <p class="text-white/40 text-xs font-light leading-relaxed mb-8 line-clamp-3">Подписаны соглашения о поставке более 50 единиц техники с льготным периодом обслуживания для местных аграриев.</p>
+                        <a class="text-primary font-bold text-[10px] uppercase tracking-widest border-b border-primary/0 hover:border-primary/100 transition-all" href="#">Читать далее</a>
+                    </div>
+                </div>
+                <div class="glassmorphism group cursor-pointer flex flex-col">
+                    <div class="relative h-64 overflow-hidden border-b border-white/5">
+                        <img alt="News 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCLPX4umgZdTgr9FWtKRk9MYDXlK1QP5AjeVWgEMKiWm9EOvhPEBXHWZuZ-fh2NVIoYmwzZwoDvOJ46FF0vJQrQmyyeSvAh2m-zul6t43h3fSDs-NtYTPXroaSBFvJ1hr8wwXNZh_F-pxGGtwR-TSa_-eLuvPqXfYU-X3t6EpFDzwU7Cc3ldJFYTSyo-w7BQUmvbgeYyZPakSe_JK8OIG6BfK92LRwYBW1LsZUGnIoccrAU0JwMIkCCz86boeAu45iCfAPdzeZCdXj"
+                        />
+                        <span class="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1 text-[9px] font-bold text-white uppercase tracking-widest border border-white/10">ПРЕСС-РЕЛИЗ</span>
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <span class="text-white/30 text-[10px] font-bold tracking-widest block mb-4">01.10.2024</span>
+                        <h3 class="text-xl font-bold font-grotesk tracking-tight uppercase mb-4 leading-snug group-hover:text-primary transition-colors">Обновление сервисного центра в Самаркандской области</h3>
+                        <p class="text-white/40 text-xs font-light leading-relaxed mb-8 line-clamp-3">Новое диагностическое оборудование позволит сократить время ремонта крупногабаритной техники вдвое.</p>
+                        <a class="text-primary font-bold text-[10px] uppercase tracking-widest border-b border-primary/0 hover:border-primary/100 transition-all" href="#">Читать далее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-12 flex items-end justify-between border-b border-white/10 pb-6">
+                <div>
+                    <span class="text-primary text-[10px] font-bold uppercase tracking-[0.4em] block mb-2">Архив материалов</span>
+                    <h2 class="text-2xl lg:text-3xl font-[800] font-grotesk uppercase tracking-tighter">МЕДИА-ЦЕНТР</h2>
+                </div>
+                <a class="text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-white transition-colors flex items-center gap-2" href="#">Смотреть всё <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
+                <div class="md:col-span-2 md:row-span-2 relative overflow-hidden group cursor-pointer">
+                    <img alt="Gallery 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQTdOTFncjHLGpNZmwKv7TbI0ZE8uZzVwZQachXMvmU5W_0CEE3W9zDdOCvioPTkhi-XW4BxyjUleigR-Dhw45UrSX8SLMD4ho4kZN8_tiCPpvVs-BOHa7Bph2IzfmjyK6r8FTWbTfxAu9vo9wxkh8mX-ntq0COstV9771BF3S_XQ9dcipU6rPEXEIjvaQqByS0Y_rTONqtiLR2ws9aBK2sG9fhshzhcaZ0crCiPWYNRidJd25Q5POKx--OUkz115SEHyU9ECeD4uW"
+                    />
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center border-glow">
+                            <span class="material-symbols-outlined text-white text-3xl">play_arrow</span>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-[9px] font-bold uppercase tracking-widest text-primary mb-1 block">Видео-обзор</span>
+                        <h4 class="text-sm font-bold uppercase font-grotesk tracking-wide">Демонстрация работы X-Terra в полевых условиях</h4>
+                    </div>
+                </div>
+                <div class="md:col-span-1 md:row-span-1 relative overflow-hidden group cursor-pointer">
+                    <img alt="Gallery 2" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCLPX4umgZdTgr9FWtKRk9MYDXlK1QP5AjeVWgEMKiWm9EOvhPEBXHWZuZ-fh2NVIoYmwzZwoDvOJ46FF0vJQrQmyyeSvAh2m-zul6t43h3fSDs-NtYTPXroaSBFvJ1hr8wwXNZh_F-pxGGtwR-TSa_-eLuvPqXfYU-X3t6EpFDzwU7Cc3ldJFYTSyo-w7BQUmvbgeYyZPakSe_JK8OIG6BfK92LRwYBW1LsZUGnIoccrAU0JwMIkCCz86boeAu45iCfAPdzeZCdXj"
+                    />
+                </div>
+                <div class="md:col-span-1 md:row-span-1 relative overflow-hidden group cursor-pointer">
+                    <img alt="Gallery 3" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQTdOTFncjHLGpNZmwKv7TbI0ZE8uZzVwZQachXMvmU5W_0CEE3W9zDdOCvioPTkhi-XW4BxyjUleigR-Dhw45UrSX8SLMD4ho4kZN8_tiCPpvVs-BOHa7Bph2IzfmjyK6r8FTWbTfxAu9vo9wxkh8mX-ntq0COstV9771BF3S_XQ9dcipU6rPEXEIjvaQqByS0Y_rTONqtiLR2ws9aBK2sG9fhshzhcaZ0crCiPWYNRidJd25Q5POKx--OUkz115SEHyU9ECeD4uW"
+                    />
+                </div>
+                <div class="md:col-span-2 md:row-span-1 relative overflow-hidden group cursor-pointer">
+                    <img alt="Gallery 4" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCLPX4umgZdTgr9FWtKRk9MYDXlK1QP5AjeVWgEMKiWm9EOvhPEBXHWZuZ-fh2NVIoYmwzZwoDvOJ46FF0vJQrQmyyeSvAh2m-zul6t43h3fSDs-NtYTPXroaSBFvJ1hr8wwXNZh_F-pxGGtwR-TSa_-eLuvPqXfYU-X3t6EpFDzwU7Cc3ldJFYTSyo-w7BQUmvbgeYyZPakSe_JK8OIG6BfK92LRwYBW1LsZUGnIoccrAU0JwMIkCCz86boeAu45iCfAPdzeZCdXj"
+                    />
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-background-dark pt-32 pb-12 relative overflow-hidden border-t border-white/5">
+        <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent shadow-[0_0_15px_rgba(227,6,19,0.5)]"></div>
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-24">
+                <div class="col-span-1 lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-10">
+                        <div class="bg-primary w-8 h-8 flex items-center justify-center shadow-[0_0_10px_rgba(227,6,19,0.4)]">
+                            <span class="material-symbols-outlined text-white text-lg">agriculture</span>
+                        </div>
+                        <div class="leading-none">
+                            <span class="block text-lg font-[800] tracking-tighter uppercase font-grotesk">Agrotech</span>
+                            <span class="block text-[8px] tracking-[0.3em] text-primary uppercase font-bold">Klaster</span>
+                        </div>
+                    </div>
+                    <p class="text-white/30 text-sm leading-relaxed mb-10 font-light italic">
+                        Промышленный холдинг, специализирующийся на сельскохозяйственном инжиниринге будущего и автономных экосистемах.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-10 text-white/60">НАВИГАЦИЯ</h5>
+                    <ul class="space-y-4 text-white/30 text-[11px] font-bold uppercase tracking-widest">
+                        <li><a class="hover:text-primary transition-colors" href="#">История</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Техника</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Инновации</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Карьера</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-10 text-white/60">КОНТАКТЫ</h5>
+                    <ul class="space-y-6 text-white/30 text-sm font-light">
+                        <li class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-primary text-lg">sensors</span>
+                            <span>123 Индустриальный сектор Альфа,<br/>Технопарк, Ташкент</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-10 text-white/60">ПОДПИСКА</h5>
+                    <form class="space-y-4">
+                        <div class="relative">
+                            <input class="w-full bg-white/5 border border-white/10 px-6 py-4 text-xs focus:border-primary focus:ring-0 transition-all placeholder:text-white/20" placeholder="Ваша почта" type="email" />
+                            <button class="absolute right-2 top-2 bottom-2 bg-primary text-white px-4 font-bold text-[9px] uppercase tracking-widest hover:brightness-110">СВЯЗЬ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-white/10 text-[9px] uppercase tracking-[0.4em] font-bold">© 2024 AGROTECH KLASTER INDUSTRIAL. NEWS_HUB_V.1.04</p>
+                <div class="flex gap-8 text-[9px] uppercase tracking-[0.4em] font-bold text-white/10">
+                    <a class="hover:text-primary transition-colors" href="#">Безопасность</a>
+                    <a class="hover:text-primary transition-colors" href="#">Политика_Данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
